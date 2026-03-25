@@ -109,6 +109,6 @@ app.get('/buscar', async (req, res) => {
         res.status(500).json({ erro: err.message });
     }
 });
-app.listen(process.env.PORT || 3000), () => {
-    console.log("🚀 Servidor rodando em http://localhost:3000");
+app.listen(process.env.PORT || 3000, () => {
+    console.log("🚀 Servidor rodando");
 });
